@@ -12,29 +12,56 @@
   <link rel="stylesheet" media = "(min-width: 720px)" href="css/NBmin720.css">
   <link rel="stylesheet" media = "(min-width: 320px)" href="css/NBmin320.css">
 
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Italiana' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
 </head>
 
 <body>
 	<nav id = "main-nav">
-		<div id = "logo-container"></div>
-		<div id = "list-container"></div>
-	</nav>
+			<div id = "logo-container">
+				<img src="Images/logo-navbar.png" alt="Navbar logo" height="80px" >
+			</div>
+			<div id = "list-container">
+				<ul>
+					<li>Home</li>
+					<li>About</li>
+					<li>Menu</li>
+					<li>Contact</li>
+				</ul>
+			</div>
+		</nav>
+
 	<section id = "landing">
-		<header id = "title"></header>
+		<header id = "title" class = "animated fadeIn delay-0.5s">
+			<p class = "intro col1">Welcome to</span></p>
+			<h1 class = "name animated fadeIn delay-1s">
+				<span style = "color:red">Niko's</span>
+			</h1>
+			<h1 class = "name col1 animated fadeIn delay-1s">Bistro</h1>
+			<h3 class = "intro col2">
+				<span >Dine-in • Takeout • Pick up • Delivery • Catering</span>
+			</h3>
+		</header>
 	</section>
+
 	<section>
 		<div id = "about-description-container"></div>
 		<div id = "call-us-container"></div>
 	</section>
+
 	<section>
 		<header id = "food-header"></header>
 		<div class = "food-carousel-container"></div>
 		<div class = "food-carousel-container"></div>
 		<div class = "food-carousel-container"></div>
 	</section>
+
 	<section>
 		<div id = "box"></div>
 	</section>
+
 	<footer></footer>
 
   <script src="js/scripts.js"></script>
