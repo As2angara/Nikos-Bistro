@@ -1,0 +1,26 @@
+/* CSS stylesheet for a min width of 1024 px */
+html,body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+/* Navigation Bar Section */
+#main-nav {
+	height: 80px;
+	width: 100%;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 80px;
+}
+
+#logo-container {
+	grid-column: 2 / span 1;
+	grid-row: 1 / span 1;
+}
+
+#list-container {
+	grid-column: 3 / span 2;
+	grid-row: 1 / span 1;
+}
