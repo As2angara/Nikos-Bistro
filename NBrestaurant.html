@@ -18,10 +18,11 @@
 
 </head>
 
-<body>
+<body onscroll = "myFunction()">
+	<!-- Navigation Bar -->
 	<nav id = "main-nav">
 			<div id = "logo-container">
-				<img src="Images/logo-navbar.png" alt="Navbar logo" height="80px" >
+				<img src="Images/logo-navbar2.png" alt="Navbar logo" height="80px" >
 			</div>
 			<div id = "list-container">
 				<ul>
@@ -31,26 +32,33 @@
 					<li>Contact</li>
 				</ul>
 			</div>
-		</nav>
+	</nav>
 
+	<!-- Landing Page -->
 	<section id = "landing">
-		<header id = "title" class = "animated fadeIn delay-0.5s">
-			<p class = "intro col1">Welcome to</span></p>
-			<h1 class = "name animated fadeIn delay-1s">
-				<span style = "color:red">Niko's</span>
-			</h1>
+		<header id = "title" class = "animated fadeIn">
+			<p class = "intro col1 animated fadeIn">Welcome to</span></p>
+			<h1 class = "name animated fadeIn delay-1s" style = "color:red">Niko's</h1>
 			<h1 class = "name col1 animated fadeIn delay-1s">Bistro</h1>
-			<h3 class = "intro col2">
+			<h3 class = "intro col2 animated fadeInLeft delay-2s">
 				<span >Dine-in • Takeout • Pick up • Delivery • Catering</span>
 			</h3>
 		</header>
 	</section>
 
-	<section>
+	<!-- section seperator -->
+	<div class = "section-cont">
+		<img src = "Images/section-symbol.png" alt = "sect-start-symbol" 
+		class = "section-symbol">
+	</div>
+
+	<!-- About us Section -->
+	<section id = "about-us-section">
 		<div id = "about-description-container"></div>
 		<div id = "call-us-container"></div>
 	</section>
 
+	<!-- Featured menu Section -->
 	<section>
 		<header id = "food-header"></header>
 		<div class = "food-carousel-container"></div>
@@ -58,12 +66,25 @@
 		<div class = "food-carousel-container"></div>
 	</section>
 
+	<!-- Contact us section -->
 	<section>
 		<div id = "box"></div>
 	</section>
 
 	<footer></footer>
 
-  <script src="js/scripts.js"></script>
+  <!--<script src="js/scripts.js"></script>-->
+  <script>
+  	function myFunction() {
+  		var navbar = document.getElementById("main-nav");
+  		//var sticky = navbar.offsetTop;
+  		if (window.pageYOffset >= 80) {
+  			navbar.style.backgroundColor = "rgba(42, 34, 34, 0.7)";
+  		} else if(window.pageYOffset == 0) {
+  			navbar.style.backgroundImage = "linear-gradient(to bottom, rgba(42, 34, 34, 1.0), rgba(42, 34, 34, 0))";
+  			navbar.style.backgroundColor = "transparent";
+  		}
+  	}
+  </script>
 </body>
 </html>
