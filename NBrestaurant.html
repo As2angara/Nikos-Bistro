@@ -54,16 +54,43 @@
 
 	<!-- About us Section -->
 	<section id = "about-us-section" onscroll = "tempFunction()">
-		<div id = "about-description-container"></div>
-		<div id = "call-us-container"></div>
+		<div id = "about-description-container">
+			<div id = "about-description-picture" ></div>
+			<div id = "about-description-text" >
+				<h1 style = "font-size: 50px;">About Niko's Bistro</h1>
+				<p style = "font-size: 16px;font-family: Verdana, Geneva, sans-serif;color: grey;">Spicy jalapeno bacon ipsum dolor amet sint kielbasa consectetur, hamburger meatloaf deserunt salami pork doner duis qui sirloin. Corned beef venison jerky, consequat qui sint dolore exercitation cow pork belly est drumstick. Short loin ex kielbasa ham hock, venison adipisicing prosciutto non ad sirloin officia ut consectetur pork excepteur.</p>
+				<p style = "font-size: 16px;font-family: Verdana, Geneva, sans-serif;color: grey;">Boudin incididunt dolor swine landjaeger. Ipsum sirloin in pork, nostrud jerky shoulder. Rump eiusmod swine nisi pork belly. Ball tip shoulder landjaeger fugiat excepteur, anim picanha. In ground round esse ut boudin nostrud andouille chuck.</p>
+			</div>
+		</div>
+		<div id = "call-us-container">
+			<div id = "call-us-text">
+				<p>TRY OUR</p>
+	    		<p>DELICIOUS</p>
+	    		<p>DAILY </p>
+	    		<p>SPECIALS!</p>
+			</div>
+			<div id = "call-us-num">
+				<p style = "font-size: 15px">Call us</p>
+    			<h1 style = "font-size: 35px; margin: 0;"> 416-479-1111 </h1>
+			</div>
+		</div>
 	</section>
 
+	<!-- section seperator -->
+	<div class = "section-cont">
+		<img src = "Images/section-symbol.png" alt = "sect-start-symbol" 
+		class = "section-symbol">
+	</div>
+
 	<!-- Featured menu Section -->
-	<section>
-		<header id = "food-header"></header>
-		<div class = "food-carousel-container"></div>
-		<div class = "food-carousel-container"></div>
-		<div class = "food-carousel-container"></div>
+	<section id = "menu-section">
+		<header id = "food-header">
+			<h1 style = "font-size: 60px;"> Menu Favourites</h1>
+			<p style = "font-size: 30px;">Experience our specialty food</p>
+		</header>
+		<div class = "food-carousel-container" id = "carouselOne"></div>
+		<div class = "food-carousel-container" id = "carouselTwo"></div>
+		<div class = "food-carousel-container" id = "carouselThree"></div>
 	</section>
 
 	<!-- Contact us section -->
@@ -87,9 +114,23 @@
 
   		if(window.innerHeight + window.scrollY > window.innerHeight + 1000){
   			const node = document.getElementById("call-us-container");
-    		node.classList.add('animated', 'fadeInDown');
+    		node.classList.add('animated', 'fadeInLeft');
   		}
 
+  		/*if(window.innerHeight + window.scrollY > window.innerHeight + 1650){
+  			const node = document.getElementById("carouselOne");
+    		node.classList.add('animated', 'fadeInRight');
+  		}
+
+  		if(window.innerHeight + window.scrollY > window.innerHeight + 2200){
+  			const node = document.getElementById("carouselTwo");
+    		node.classList.add('animated', 'fadeInLeft');
+  		}
+
+  		if(window.innerHeight + window.scrollY > window.innerHeight + 2750){
+  			const node = document.getElementById("carouselThree");
+    		node.classList.add('animated', 'fadeInRight');
+  		}*/
   	}
 
   </script>

@@ -3,8 +3,15 @@ html,body{
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	font-family: 'Fjalla One', sans-serif;;
+	font-family: 'Fjalla One', sans-serif;
 }
+
+body {
+	background: url("../Images/baked-beer-cheese.jpg") no-repeat fixed;
+	background-position: center center;
+	background-size: cover;
+}
+
 
 /* Navigation Bar Section */
 #main-nav {
@@ -48,6 +55,7 @@ html,body{
 	height: 100%;
 	width: 100%;
 	background: url("../Images/Landing-page-background.jpg") no-repeat fixed center;
+	transition: 0.5s;
 
 	display: flex;
 	justify-content: center;
@@ -80,6 +88,21 @@ html,body{
 	color: #64D622;
 }
 
+/* Section Seperating element*/
+.section-cont {
+	width:100%;
+	height: 80px;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.section-symbol {
+	height: 75px;
+	width: auto;
+}
+
 /* About us section */
 
 #about-us-section {
@@ -98,6 +121,27 @@ html,body{
 	background-color: white;
 	box-shadow: 5px 5px 5px grey;
 	margin: 50px auto;
+
+	display: grid;
+	grid-template-columns: 250px 1fr;
+	grid-template-rows: 700px;
+}
+
+#about-description-picture {
+	grid-column: 1 / span 1;
+	grid-row: 1 / span 1;
+	background: url("../Images/about-desc-pic.jpg") no-repeat center center;
+}
+
+#about-description-text {
+	font-family: 'Italiana';
+	grid-column: 2 / span 1;
+	grid-row: 1 / span 1;
+	padding: 50px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 #call-us-container {
@@ -106,21 +150,74 @@ html,body{
 	background-color: rgb(213 69 60);
 	box-shadow: 5px 5px 5px grey;
 	margin: 50px auto;
+
+	display: grid;
+	grid-template-columns: 250px 1fr;
+	grid-template-rows: 250px;
 }
 
-.section-cont {
-	width:100%;
-	height: 80px;
-	background-color: black;
+#call-us-text {
+	grid-column: 1 / span 1;
+	grid-row: 1 / span 1;
+	background-color: rgb(70 70 70);
+	padding: 20px 50px;
+	font-family: Verdana, Geneva, sans-serif; font-size: 20px;
+	color: #BFBFBF;
+}
+
+#call-us-num {
+	grid-column: 2 / span 1;
+	grid-row: 1 / span 1;
+	font-family: Verdana, Geneva, sans-serif;
+	color: white;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 }
 
-.section-symbol {
-	height: 75px;
-	width: auto;
+/* Featured menu section */
+
+#menu-section {
+	height: 900px;
+	width: 100%;
 }
+
+#food-header {
+	width: 40%;
+	height: 250px;
+	background: rgba(17,17,17,0.5);
+	font-family: 'Italiana';
+    line-height: 80%;
+    border-radius: 15%;
+    margin: 50px auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.food-carousel-container {
+	height: 500px;
+	width: 60%;
+	background-color: white;
+	box-shadow: 5px 5px 5px black;
+	margin: 50px auto;
+}
+
+#carouselOne, #carouselThree {
+	display: grid;
+	grid-template-columns: 1fr 250px;
+	grid-template-rows: 500px;
+}
+
+#carouselTwo {
+	display: grid;
+	grid-template-columns: 250px 1fr;
+	grid-template-rows: 500px;
+}
+
 
 
 
