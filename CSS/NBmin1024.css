@@ -218,6 +218,28 @@ body {
 	grid-template-rows: 500px;
 }
 
+#carouselOne-pic, #carouselThree-pic {
+	grid-column: 2 / span 1;
+	grid-row: 1 / span 1;
+}
+
+#carouselOne-pic {
+	background: url("../Images/penne-pasta.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+#carouselTwo-pic {
+	grid-columm: 1 / span 1;
+	grid-row: 1 / span 1;
+	background: url("../Images/french-fries.jpeg") no-repeat center center;
+	background-size: cover;
+}
+
+#carouselThree-pic {
+	background: url("../Images/choco-cake.jpg") no-repeat center center;
+	background-size: cover;
+}
+
 
 
 

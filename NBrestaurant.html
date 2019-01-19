@@ -6,6 +6,7 @@
 
   <title>Niko's Bistro</title>
   <meta name="description" content="Niko's Bistro Restaurant Website">
+  <link rel="icon" type="image/png" href="Images/small-pizza-logo.png">
   <meta name="author" content="Adrian Angara">
 
   <link rel="stylesheet" media = "(min-width: 1024px)" href="css/NBmin1024.css">
@@ -15,10 +16,9 @@
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Italiana' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-
 </head>
 
-<body onscroll = "myFunction()">
+<body onscroll = "myScrollFunction()">
 	<!-- Navigation Bar -->
 	<nav id = "main-nav">
 			<div id = "logo-container">
@@ -41,7 +41,7 @@
 			<h1 class = "name animated fadeIn delay-1s" style = "color:red">Niko's</h1>
 			<h1 class = "name col1 animated fadeIn delay-1s">Bistro</h1>
 			<h3 class = "intro col2 animated fadeInLeft delay-2s">
-				<span >Dine-in • Takeout • Pick up • Delivery • Catering</span>
+				<span >Dine-in • Takeout • Pick up • Delivery</span>
 			</h3>
 		</header>
 	</section>
@@ -88,9 +88,18 @@
 			<h1 style = "font-size: 60px;"> Menu Favourites</h1>
 			<p style = "font-size: 30px;">Experience our specialty food</p>
 		</header>
-		<div class = "food-carousel-container" id = "carouselOne"></div>
-		<div class = "food-carousel-container" id = "carouselTwo"></div>
-		<div class = "food-carousel-container" id = "carouselThree"></div>
+		<div class = "food-carousel-container" id = "carouselOne">
+			<div id = "carouselOne-pic"></div>
+			<div id = "carouselOne-main"></div>
+		</div>
+		<div class = "food-carousel-container" id = "carouselTwo">
+			<div id = "carouselTwo-pic"></div>
+			<div id = "carouselTwo-main"></div>
+		</div>
+		<div class = "food-carousel-container" id = "carouselThree">
+			<div id = "carouselThree-pic"></div>
+			<div id = "carouselThree-main"></div>
+		</div>
 	</section>
 
 	<!-- Contact us section -->
@@ -100,39 +109,7 @@
 
 	<footer></footer>
 
-  <!--<script src="js/scripts.js"></script>-->
-  <script>
-  	function myFunction() {
-  		var navbar = document.getElementById("main-nav");
-  		
-  		if (window.pageYOffset >= 80) {
-  			navbar.style.backgroundColor = "rgba(42, 34, 34, 0.7)";
-  		} else if(window.pageYOffset == 0) {
-  			navbar.style.backgroundImage = "linear-gradient(to bottom, rgba(42, 34, 34, 1.0), rgba(42, 34, 34, 0))";
-  			navbar.style.backgroundColor = "transparent";
-  		}
-
-  		if(window.innerHeight + window.scrollY > window.innerHeight + 1000){
-  			const node = document.getElementById("call-us-container");
-    		node.classList.add('animated', 'fadeInLeft');
-  		}
-
-  		/*if(window.innerHeight + window.scrollY > window.innerHeight + 1650){
-  			const node = document.getElementById("carouselOne");
-    		node.classList.add('animated', 'fadeInRight');
-  		}
-
-  		if(window.innerHeight + window.scrollY > window.innerHeight + 2200){
-  			const node = document.getElementById("carouselTwo");
-    		node.classList.add('animated', 'fadeInLeft');
-  		}
-
-  		if(window.innerHeight + window.scrollY > window.innerHeight + 2750){
-  			const node = document.getElementById("carouselThree");
-    		node.classList.add('animated', 'fadeInRight');
-  		}*/
-  	}
-
-  </script>
+  <!--<script src="JS/scripts.js"></script>-->
+ 
 </body>
 </html>
