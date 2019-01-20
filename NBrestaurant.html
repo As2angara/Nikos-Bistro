@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="slick/slick-theme.css"/>
 </head>
 
-<body> <!--onscroll = "myScrollFunction()"-->
+<body onscroll = "myScrollFunction()"> <!--onscroll = "myScrollFunction()"-->
 	<!-- Navigation Bar -->
 	<nav id = "main-nav">
 			<div id = "logo-container">
@@ -87,17 +87,19 @@
 
 	<!-- Featured menu Section -->
 	<section id = "menu-section">
+
 		<header id = "food-header">
 			<h1 style = "font-size: 50px;"> Menu Favourites</h1>
 			<p style = "font-size: 30px;">Experience our specialty food</p>
 		</header>
+
 		<div class = "food-carousel-container" id = "carouselOne">
 			<div id = "carouselOne-pic"></div>
 			<div id = "carouselOne-main">
-				<div class = "prev">&#10094;</div>
-				<div class = "next">&#10095;</div>
-				<h1 style = "font-family: 'Italiana'; margin: 30px 5% 50px 5%;font-size: 55px; border-bottom: 10px solid black;">Classic Entrées</h1>
-				<div id = "carouselOne-main-slider" class = "food-slider">
+				<div class = "prev1">&#10094;</div>
+				<div class = "next1">&#10095;</div>
+				<h1 class = "food-title" >Classic Entrées</h1>
+				<div class = "food-slider food-slider1">
 					<figure class = "foodCardClass">
 						<img src = "" style = "Background-color: black; height: 150px; width: 100%;" >
 						<figcaption class = "slider-caption">
@@ -115,7 +117,7 @@
 						</figcaption>
 					</figure>
 					<figure class = "foodCardClass">
-						<img src = "Images/small-pizza-logo.png" style = "Background-color: black; height: 150px; width: 100%;" >
+						<img src = "" style = "Background-color: black; height: 150px; width: 100%;" >
 						<figcaption class = "slider-caption">
 							<h3>Cheese Pizza</h3>
 							<p>Nulla mollit pig ground round. Fatback velit id</p>
@@ -123,7 +125,7 @@
 						</figcaption>
 					</figure>
 					<figure class = "foodCardClass">
-						<img src = "Images/small-pizza-logo.png" style = "Background-color: black; height: 150px; width: 100%;" >
+						<img src = "" style = "Background-color: black; height: 150px; width: 100%;" >
 						<figcaption class = "slider-caption">
 							<h3>Chicken Wings</h3> 
 							<p>trip steak turducken duis ipsum chuck landjaeger</p>
@@ -131,7 +133,7 @@
 						</figcaption>
 					</figure>
 					<figure class = "foodCardClass">
-						<img src = "Images/small-pizza-logo.png" style = "Background-color: black; height: 50%; width: 100%;" >
+						<img src = "" style = "Background-color: black; height: 150px; width: 100%;" >
 						<figcaption class = "slider-caption">
 							<h3>Mushroom Pizza</h3>
 							<p>Nulla mollit pig ground round. Fatback velit id</p>
@@ -139,7 +141,66 @@
 						</figcaption>
 					</figure>
 					<figure class = "foodCardClass">
-						<img src = "Images/small-pizza-logo.png" style = "Background-color: black; height: 150px; width: 100%;" >
+						<img src = "" style = "Background-color: black; height: 150px; width: 100%;" >
+						<figcaption class = "slider-caption">
+							<h3>Garlic bread</h3>
+							<p>trip steak turducken duis ipsum chuck landjaeger</p>
+							<p>$5.99</p>
+						</figcaption>
+					</figure>
+				</div>
+			</div>	
+		</div>
+
+		<div class = "food-carousel-container" id = "carouselTwo">
+			<div id = "carouselTwo-pic"></div>
+			<div id = "carouselTwo-main">
+				<div class = "prev2">&#10094;</div>
+				<div class = "next2">&#10095;</div>
+				<h1 class = "food-title" >Savoury Sides</h1>
+				<div class = "food-slider food-slider2">
+					<figure class = "foodCardClass">
+						<img src = "" style = "Background-color: black; height: 150px; width: 100%;" >
+						<figcaption class = "slider-caption">
+							<h3> Poutine</h3>
+							<p> Doner pork loin alcatra chicken Boudin fatback.</p>
+							<p>$5.99</p>
+						</figcaption>
+					</figure>
+					<figure class = "foodCardClass">
+						<img src = "" style = "Background-color: black; height: 150px; width: 100%;" >
+						<figcaption class = "slider-caption">
+							<h3>Side Salad</h3>
+							<p>trip steak turducken duis ipsum chuck landjaeger</p>
+							<p>$3.99</p>
+						</figcaption>
+					</figure>
+					<figure class = "foodCardClass">
+						<img src = "" style = "Background-color: black; height: 150px; width: 100%;" >
+						<figcaption class = "slider-caption">
+							<h3>Soup of the Day</h3>
+							<p>trip steak turducken duis ipsum chuck landjaeger</p>
+							<p>$4.99</p>
+						</figcaption>
+					</figure>
+					<figure class = "foodCardClass">
+						<img src = "" style = "Background-color: black; height: 150px; width: 100%;" >
+						<figcaption class = "slider-caption">
+							<h3>Mini Pizza</h3>
+							<p> Doner pork loin alcatra chicken Boudin fatback.</p>
+							<p>$5.99</p>
+						</figcaption>
+					</figure>
+					<figure class = "foodCardClass">
+						<img src = "" style = "Background-color: black; height: 150px; width: 100%;" >
+						<figcaption class = "slider-caption">
+							<h3>French Fries</h3>
+							<p>trip steak turducken duis ipsum chuck landjaeger</p>
+							<p>$3.99</p>
+						</figcaption>
+					</figure>
+					<figure class = "foodCardClass">
+						<img src = "" style = "Background-color: black; height: 150px; width: 100%;" >
 						<figcaption class = "slider-caption">
 							<h3>Garlic bread</h3>
 							<p>trip steak turducken duis ipsum chuck landjaeger</p>
@@ -148,15 +209,65 @@
 					</figure>
 				</div>
 			</div>
-			
 		</div>
-		<div class = "food-carousel-container" id = "carouselTwo">
-			<div id = "carouselTwo-pic"></div>
-			<div id = "carouselTwo-main"></div>
-		</div>
+
 		<div class = "food-carousel-container" id = "carouselThree">
 			<div id = "carouselThree-pic"></div>
-			<div id = "carouselThree-main"></div>
+			<div id = "carouselThree-main">
+				<div class = "prev3">&#10094;</div>
+				<div class = "next3">&#10095;</div>
+				<h1 class = "food-title" >Decadent Desserts</h1>
+				<div class = "food-slider food-slider3">
+					<figure class = "foodCardClass">
+						<img src = "" style = "Background-color: black; height: 150px; width: 100%;" >
+						<figcaption class = "slider-caption">
+							<h3>Pineapple cake</h3>
+							<p>Doner pork loin alcatra chicken Boudin fatback.</p>
+							<p>$2.99</p>
+						</figcaption>
+					</figure>
+					<figure class = "foodCardClass">
+						<img src = "" style = "Background-color: black; height: 150px; width: 100%;" >
+						<figcaption class = "slider-caption">
+							<h3>Gelato</h3>
+							<p>Nulla mollit pig ground round. Fatback velit id</p>
+							<p>$3.99</p>
+						</figcaption>
+					</figure>
+					<figure class = "foodCardClass">
+						<img src = "" style = "Background-color: black; height: 150px; width: 100%;" >
+						<figcaption class = "slider-caption">
+							<h3>Cannoli</h3>
+							<p>trip steak turducken duis ipsum chuck landjaeger</p>
+							<p>$1.99</p>
+						</figcaption>
+					</figure>
+					<figure class = "foodCardClass">
+						<img src = "" style = "Background-color: black; height: 150px; width: 100%;" >
+						<figcaption class = "slider-caption">
+							<h3>Tiramisu</h3>
+							<p>Doner pork loin alcatra chicken Boudin fatback.</p>
+							<p>$5.99</p>
+						</figcaption>
+					</figure>
+					<figure class = "foodCardClass">
+						<img src = "" style = "Background-color: black; height: 150px; width: 100%;" >
+						<figcaption class = "slider-caption">
+							<h3>Panettone</h3>
+							<p>Nulla mollit pig ground round. Fatback velit id</p>
+							<p>$4.99</p>
+						</figcaption>
+					</figure>
+					<figure class = "foodCardClass">
+						<img src = "" style = "Background-color: black; height: 150px; width: 100%;" >
+						<figcaption class = "slider-caption">
+							<h3>tartufo</h3>
+							<p>trip steak turducken duis ipsum chuck landjaeger</p>
+							<p>$2.99</p>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
 		</div>
 	</section>
 

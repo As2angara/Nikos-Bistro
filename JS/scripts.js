@@ -27,31 +27,53 @@ function scrollCallUsCont() {
 function scrollCarouselOne() {
   if(window.innerHeight + window.scrollY > window.innerHeight + 1650){
     const node = document.getElementById("carouselOne");
-    node.classList.add('animated', 'fadeInRight');
+    node.classList.add('animated', 'fadeIn');
   }
 }
 
 function scrollCarouselTwo() {
   if(window.innerHeight + window.scrollY > window.innerHeight + 2200){
     const node = document.getElementById("carouselTwo");
-    node.classList.add('animated', 'fadeInLeft');
+    node.classList.add('animated', 'fadeIn');
   }
 }
 
 function scrollCarouselThree() {
   if(window.innerHeight + window.scrollY > window.innerHeight + 2750){
     const node = document.getElementById("carouselThree");
-    node.classList.add('animated', 'fadeInRight');
+    node.classList.add('animated', 'fadeIn');
   }
 }
 
 $(document).ready(function(){
-  $('.food-slider').slick({
+  $('.food-slider1').slick({
     arrows: true,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
-    prevArrow: $('.prev'),
-    nextArrow: $('.next')
+    prevArrow: $('.prev1'),
+    nextArrow: $('.next1')
+  });
+});
+
+$(document).ready(function(){
+  $('.food-slider2').slick({
+    arrows: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    prevArrow: $('.prev2'),
+    nextArrow: $('.next2')
+  });
+});
+
+$(document).ready(function(){
+  $('.food-slider3').slick({
+    arrows: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    prevArrow: $('.prev3'),
+    nextArrow: $('.next3')
   });
 });

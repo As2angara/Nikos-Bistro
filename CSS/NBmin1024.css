@@ -240,14 +240,23 @@ body {
 	background-size: cover;
 }
 
-#carouselOne-main{
+#carouselOne-main, #carouselThree-main{
 	grid-column: 1 / span 1;
 	grid-row: 1 / span 1;
 	/*background-color: grey;*/
 	background-color: #f8f8f8;
+	position: relative;
 }
 
-#carouselOne-main-slider {
+#carouselTwo-main {
+	grid-column: 2 / span 1;
+	grid-row: 1 / span 1;
+	/*background-color: grey;*/
+	background-color: #f8f8f8;
+	position: relative;
+}
+
+.food-slider {
 	width: 90%;
 	height: 350px;
 	margin: auto;
@@ -256,7 +265,7 @@ body {
 .foodCardClass{
 	height: 300px;
 	width: 200px;
-	background-color: rgb(198, 198, 198);
+	background-color: rgb(232, 232, 232);
 	margin: auto;
 	padding: 3px 10px;
 	box-sizing: border-box;
@@ -276,24 +285,44 @@ body {
 	background-color: #f8f8f8;
 }
 
-.prev {
-  height: 20px;
-  width: 20px;
-  background-color: rgb(198, 198, 198);
+.prev1.slick-arrow,
+.prev2.slick-arrow,
+.prev3.slick-arrow {
   font-size: 30px;
   position: absolute;
-  top: 0;
+  top: 55%;
   cursor: pointer;
+  margin-left: 10px;
 }
 
-.next {
-  height: 20px;
-  width: 20px;
-  background-color: rgb(198, 198, 198);
+.prev1.slick-arrow:hover,
+.prev2.slick-arrow:hover,
+.prev3.slick-arrow:hover{
+	color: red;
+}
+
+.next1.slick-arrow,
+.next2.slick-arrow,
+.next3.slick-arrow {
   font-size: 30px;
   position: absolute;
-  top: 0;
+  top: 55%;
+  right: 0;
   cursor: pointer;
+  margin-right: 10px;
+}
+
+.next1.slick-arrow:hover,
+.next2.slick-arrow:hover,
+.next3.slick-arrow:hover {
+	color: red;
+}
+
+.food-title {
+	font-family: 'Italiana'; 
+	margin: 30px 5% 50px 5%;
+	font-size: 55px; 
+	border-bottom: 10px solid black;
 }
 
 
