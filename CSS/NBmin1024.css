@@ -214,7 +214,7 @@ body {
 
 #carouselTwo {
 	display: grid;
-	grid-template-columns: 250px 250px;
+	grid-template-columns: 250px 650px;
 	grid-template-rows: 500px;
 }
 
@@ -243,7 +243,8 @@ body {
 #carouselOne-main{
 	grid-column: 1 / span 1;
 	grid-row: 1 / span 1;
-	background-color: grey;
+	/*background-color: grey;*/
+	background-color: #f8f8f8;
 }
 
 #carouselOne-main-slider {
@@ -255,10 +256,44 @@ body {
 .foodCardClass{
 	height: 300px;
 	width: 200px;
-	background-color: #f8f8f8;
-	box-shadow: 5px 5px 5px grey;
+	background-color: rgb(198, 198, 198);
 	margin: auto;
-	padding: 0 10px;
+	padding: 3px 10px;
+	box-sizing: border-box;
+}
+
+.foodCardClass img {
+	border: 1px solid grey;
+	box-sizing: border-box;
+}
+
+.slider-caption {
+	height: 50%; 
+	width: 100%; 
+	box-sizing: border-box; 
+	border: 1px solid grey;
+	text-align: center;
+	background-color: #f8f8f8;
+}
+
+.prev {
+  height: 20px;
+  width: 20px;
+  background-color: rgb(198, 198, 198);
+  font-size: 30px;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+}
+
+.next {
+  height: 20px;
+  width: 20px;
+  background-color: rgb(198, 198, 198);
+  font-size: 30px;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
 }
 
 

@@ -49,6 +49,9 @@ $(document).ready(function(){
   $('.food-slider').slick({
     arrows: true,
     infinite: true,
-    slidesToShow: 3
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    prevArrow: $('.prev'),
+    nextArrow: $('.next')
   });
 });
