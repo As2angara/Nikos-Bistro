@@ -48,6 +48,7 @@ function scrollCarouselThree() {
 $(document).ready(function(){
   $('.food-slider1').slick({
     arrows: true,
+    dots: true,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
@@ -59,6 +60,7 @@ $(document).ready(function(){
 $(document).ready(function(){
   $('.food-slider2').slick({
     arrows: true,
+    dots: true,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
@@ -70,6 +72,7 @@ $(document).ready(function(){
 $(document).ready(function(){
   $('.food-slider3').slick({
     arrows: true,
+    dots: true,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,

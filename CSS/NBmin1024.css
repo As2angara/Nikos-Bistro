@@ -179,7 +179,7 @@ body {
 /* Featured menu section */
 
 #menu-section {
-	height: 900px;
+	height: auto;
 	width: 100%;
 }
 
@@ -258,7 +258,7 @@ body {
 
 .food-slider {
 	width: 90%;
-	height: 350px;
+	height: 300px;
 	margin: auto;
 }
 
@@ -271,9 +271,12 @@ body {
 	box-sizing: border-box;
 }
 
-.foodCardClass img {
+.foodCardClass div {
 	border: 1px solid grey;
 	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .slider-caption {
@@ -324,6 +327,145 @@ body {
 	font-size: 55px; 
 	border-bottom: 10px solid black;
 }
+
+#full-menu {
+	background-color: rgb(213 69 60);
+	height: 250px;
+	width: 100%;
+}
+
+#full-menu-container {
+	height: 250px;
+	width: 900px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#full-menu-container h1 {
+	font-family: 'Italiana'; 
+	font-size: 30px;
+	color: white;
+}
+
+#full-menu-container a {
+	padding: 20px 40px; 
+	background-color: white; 
+	font-size: 25px;
+	border-radius: 15px;
+	text-decoration: none;
+	color: rgb(213 69 60);
+}
+
+#full-menu-container a:hover {
+	background-color: rgba(70, 70, 70, 0.8);
+}
+
+/* Contact Us Section */
+
+#contact-section {
+	height: auto;
+	width: 100%;
+	background-color: rgb(100, 100, 100);
+}
+
+#contact-section-content {
+	height: auto;
+	width: 900px;
+	margin: auto;
+	text-align: center;
+}
+
+#contact-section-content h1 {
+	font-size: 60px;
+	color: #f7f7f7;
+	margin: 0;
+	padding: 50px;
+	border-bottom: 1px solid #f7f7f7;
+}
+
+#find-us {
+	height: auto;
+	width: 900px;
+	margin: 50px 0;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+#contact-us-form {
+	height: auto;
+	width: 400px;
+}
+
+#contact-us-form input {
+	background-color: #f7f7f7;
+	color: rgb(100,100,100);
+	width: 400px;
+	border: 0;
+	border-radius: 5px;
+	padding: 5px;
+	box-sizing: border-box;
+	margin-top: 20px;
+}
+
+#contact-us-form textarea {
+	background-color: #f7f7f7;
+	color: rgb(100,100,100);
+	border-radius: 5px;
+	padding: 5px;
+	box-sizing: border-box;
+	margin-top: 20px;
+}
+
+#contact-us-form #submit-button {
+	font-size: 15px;
+	background-color: rgb(100,100,100);
+	border: 1px solid #f7f7f7;
+	color: #f7f7f7;
+	margin: 20px 75px;
+	padding: 10px 0;
+	width: 150px;
+}
+
+#contact-us-form #submit-button:hover {
+	background-color: #f7f7f7;
+	color: rgb(100,100,100);
+}
+
+#general-info {
+	width: 400px;
+	height: 200px;
+	text-align: center;
+	color: #f7f7f7;
+	font-size: 20px;
+	position: relative;
+	border-bottom: 1px solid #f7f7f7;
+}
+
+#general-info .icon {
+	color: #f7f7f7; 
+	position: absolute; 
+	left: 0;
+}
+
+/* footer section */
+
+#mainPage-footer {
+	height: 250px;
+	width: 100%;
+	background-color: black;
+}
+
+#footer-inner {
+	height: 100%;
+	width: 900px;
+	margin: auto;
+}
+
+
+
 
 
 
