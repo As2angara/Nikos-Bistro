@@ -1,11 +1,10 @@
-function myScrollFunction() {
-  		
+/*function myScrollFunction() {
   scrollNavBar();
   scrollCallUsCont();
   scrollCarouselOne();
   scrollCarouselTwo();
   scrollCarouselThree();
-}
+}*/
 
 function scrollNavBar() {
   var navbar = document.getElementById("main-nav");
@@ -45,3 +44,11 @@ function scrollCarouselThree() {
     node.classList.add('animated', 'fadeInRight');
   }
 }
+
+$(document).ready(function(){
+  $('.food-slider').slick({
+    arrows: true,
+    infinite: true,
+    slidesToShow: 3
+  });
+});

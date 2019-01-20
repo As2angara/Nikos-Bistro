@@ -23,7 +23,7 @@ body {
 	transition: 0.3s;
 
 	display: grid;
-	grid-template-columns: 20% 30% 15% 15% 20%;
+	grid-template-columns: 1fr 450px 225px 225px 1fr;
 	grid-template-rows: 80px;
 }
 
@@ -63,7 +63,7 @@ body {
 }
 
 #title {
-	width: 40%;
+	width: 570px;
 	height: auto;
 	background: rgba(17,17,17,0.5);
 	text-align: center;
@@ -117,7 +117,7 @@ body {
 
 #about-description-container {
 	height: 700px;
-	width: 60%;
+	width: 900px;
 	background-color: white;
 	box-shadow: 5px 5px 5px grey;
 	margin: 50px auto;
@@ -146,7 +146,7 @@ body {
 
 #call-us-container {
 	height: 250px;
-	width: 60%;
+	width: 900px;
 	background-color: rgb(213 69 60);
 	box-shadow: 5px 5px 5px grey;
 	margin: 50px auto;
@@ -184,7 +184,7 @@ body {
 }
 
 #food-header {
-	width: 40%;
+	width: 570px;
 	height: 250px;
 	background: rgba(17,17,17,0.5);
 	font-family: 'Italiana';
@@ -200,7 +200,7 @@ body {
 
 .food-carousel-container {
 	height: 500px;
-	width: 60%;
+	width: 900px;
 	background-color: white;
 	box-shadow: 5px 5px 5px black;
 	margin: 50px auto;
@@ -208,13 +208,13 @@ body {
 
 #carouselOne, #carouselThree {
 	display: grid;
-	grid-template-columns: 1fr 250px;
+	grid-template-columns: 650px 250px;
 	grid-template-rows: 500px;
 }
 
 #carouselTwo {
 	display: grid;
-	grid-template-columns: 250px 1fr;
+	grid-template-columns: 250px 250px;
 	grid-template-rows: 500px;
 }
 
@@ -238,6 +238,27 @@ body {
 #carouselThree-pic {
 	background: url("../Images/choco-cake.jpg") no-repeat center center;
 	background-size: cover;
+}
+
+#carouselOne-main{
+	grid-column: 1 / span 1;
+	grid-row: 1 / span 1;
+	background-color: grey;
+}
+
+#carouselOne-main-slider {
+	width: 90%;
+	height: 350px;
+	margin: auto;
+}
+
+.foodCardClass{
+	height: 300px;
+	width: 200px;
+	background-color: #f8f8f8;
+	box-shadow: 5px 5px 5px grey;
+	margin: auto;
+	padding: 0 10px;
 }
 
 
