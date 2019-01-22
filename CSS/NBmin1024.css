@@ -144,6 +144,18 @@ body {
 	align-items: center;
 }
 
+#about-description-text h1 {
+	font-size: 50px;
+}
+
+#about-description-text p {
+	font-size: 16px;
+	font-family: Verdana, Geneva, sans-serif;
+	color: grey;
+}
+
+
+
 #call-us-container {
 	height: 250px;
 	width: 900px;
@@ -417,6 +429,8 @@ body {
 	padding: 5px;
 	box-sizing: border-box;
 	margin-top: 20px;
+	width:400px; 
+	height:200px;
 }
 
 #contact-us-form #submit-button {

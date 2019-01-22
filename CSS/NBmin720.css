@@ -1,0 +1,493 @@
+/* CSS stylesheet for a min width of 1024 px */
+html,body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: 'Fjalla One', sans-serif;
+}
+
+body {
+	background: url("../Images/baked-beer-cheese.jpg") no-repeat fixed;
+	background-position: center center;
+	background-size: cover;
+}
+
+
+/* Navigation Bar Section */
+#main-nav {
+	position: fixed;
+	z-index: 99;
+	height: 80px;
+	width: 100%;
+	background-image: linear-gradient(to bottom, rgba(42, 34, 34, 1.0), rgba(42, 34, 34, 0));
+	transition: 0.3s;
+
+	display: grid;
+	grid-template-columns: 1fr 340px 170px 170px 1fr;
+	grid-template-rows: 80px;
+}
+
+#logo-container {
+	grid-column: 2 / span 1;
+	grid-row: 1 / span 1;
+}
+
+#list-container {
+	grid-column: 3 / span 2;
+	grid-row: 1 / span 1;
+}
+
+#list-container ul {
+	padding: 0;
+	list-style-type: none;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	color: white;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Landing page settings */
+#landing {
+	height: 100%;
+	width: 100%;
+	background: url("../Images/Landing-page-background.jpg") no-repeat fixed center;
+	transition: 0.5s;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#title {
+	width: 600px;
+	height: auto;
+	background: rgba(17,17,17,0.5);
+	text-align: center;
+	font-family: 'Italiana';
+    line-height: 80%;
+    border-radius: 15%;
+}
+
+.intro {
+	font-size: 22px;
+}
+
+.col1 {
+	color: white;
+}
+
+.name {
+	font-size: 80px;
+}
+
+.col2 {
+	color: #64D622;
+}
+
+/* Section Seperating element*/
+.section-cont {
+	width:100%;
+	height: 80px;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.section-symbol {
+	height: 75px;
+	width: auto;
+}
+
+/* About us section */
+
+#about-us-section {
+	height: auto;
+	width: 100%;
+	background-color: #F7F7F7;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#about-description-container {
+	height: 700px;
+	width: 680px;
+	background-color: white;
+	box-shadow: 5px 5px 5px grey;
+	margin: 50px auto;
+
+	display: grid;
+	grid-template-columns: 250px 1fr;
+	grid-template-rows: 700px;
+}
+
+#about-description-picture {
+	grid-column: 1 / span 1;
+	grid-row: 1 / span 1;
+	background: url("../Images/about-desc-pic.jpg") no-repeat center center;
+}
+
+#about-description-text {
+	font-family: 'Italiana';
+	grid-column: 2 / span 1;
+	grid-row: 1 / span 1;
+	padding: 50px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#about-description-text h1 {
+	font-size: 40px;
+}
+
+#about-description-text p {
+	font-size: 15px;
+	font-family: Verdana, Geneva, sans-serif;
+	color: grey;
+}
+
+#call-us-container {
+	height: 250px;
+	width: 680px;
+	background-color: rgb(213 69 60);
+	box-shadow: 5px 5px 5px grey;
+	margin: 50px auto;
+
+	display: grid;
+	grid-template-columns: 250px 1fr;
+	grid-template-rows: 250px;
+}
+
+#call-us-text {
+	grid-column: 1 / span 1;
+	grid-row: 1 / span 1;
+	background-color: rgb(70 70 70);
+	padding: 40px 50px;
+	font-family: Verdana, Geneva, sans-serif; font-size: 16px;
+	color: #BFBFBF;
+}
+
+#call-us-num {
+	grid-column: 2 / span 1;
+	grid-row: 1 / span 1;
+	font-family: Verdana, Geneva, sans-serif;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Featured menu section */
+
+#menu-section {
+	height: auto;
+	width: 100%;
+}
+
+#food-header {
+	width: 570px;
+	height: 250px;
+	background: rgba(17,17,17,0.5);
+	font-family: 'Italiana';
+    line-height: 80%;
+    border-radius: 15%;
+    margin: 50px auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.food-carousel-container {
+	height: 500px;
+	width: 680px;
+	background-color: white;
+	box-shadow: 5px 5px 5px black;
+	margin: 50px auto;
+}
+
+#carouselOne-main, #carouselThree-main{
+	background-color: #f8f8f8;
+	position: relative;
+}
+
+#carouselTwo-main {
+	background-color: #f8f8f8;
+	position: relative;
+}
+
+.food-slider {
+	width: 90%;
+	height: 300px;
+	margin: auto;
+}
+
+.foodCardClass{
+	height: 300px;
+	width: 200px;
+	background-color: rgb(232, 232, 232);
+	margin: auto;
+	padding: 3px 10px;
+	box-sizing: border-box;
+}
+
+.foodCardClass div {
+	border: 1px solid grey;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.slider-caption {
+	height: 50%; 
+	width: 100%; 
+	box-sizing: border-box; 
+	border: 1px solid grey;
+	text-align: center;
+	background-color: #f8f8f8;
+}
+
+.prev1.slick-arrow,
+.prev2.slick-arrow,
+.prev3.slick-arrow {
+  font-size: 30px;
+  position: absolute;
+  top: 55%;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.prev1.slick-arrow:hover,
+.prev2.slick-arrow:hover,
+.prev3.slick-arrow:hover{
+	color: red;
+}
+
+.next1.slick-arrow,
+.next2.slick-arrow,
+.next3.slick-arrow {
+  font-size: 30px;
+  position: absolute;
+  top: 55%;
+  right: 0;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.next1.slick-arrow:hover,
+.next2.slick-arrow:hover,
+.next3.slick-arrow:hover {
+	color: red;
+}
+
+.food-title {
+	font-family: 'Italiana'; 
+	margin: 30px 5% 50px 5%;
+	font-size: 55px; 
+	border-bottom: 10px solid black;
+}
+
+#full-menu {
+	background-color: rgb(213 69 60);
+	height: 250px;
+	width: 100%;
+}
+
+#full-menu-container {
+	height: 250px;
+	width: 680px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#full-menu-container h1 {
+	font-family: 'Italiana'; 
+	font-size: 25px;
+	color: white;
+}
+
+#full-menu-container a {
+	padding: 20px 30px; 
+	background-color: white; 
+	font-size: 20px;
+	border-radius: 15px;
+	text-decoration: none;
+	color: rgb(213 69 60);
+}
+
+#full-menu-container a:hover {
+	background-color: rgba(70, 70, 70, 0.8);
+}
+
+/* Contact Us Section */
+
+#contact-section {
+	height: auto;
+	width: 100%;
+	background-color: rgb(100, 100, 100);
+}
+
+#contact-section-content {
+	height: auto;
+	width: 680px;
+	margin: auto;
+	text-align: center;
+}
+
+#contact-section-content h1 {
+	font-size: 60px;
+	color: #f7f7f7;
+	margin: 0;
+	padding: 50px;
+	border-bottom: 1px solid #f7f7f7;
+}
+
+#find-us {
+	height: auto;
+	width: 680px;
+	margin: 50px 0;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+#contact-us-form {
+	height: auto;
+	width: 300px;
+}
+
+#contact-us-form input {
+	background-color: #f7f7f7;
+	color: rgb(100,100,100);
+	width: 300px;
+	border: 0;
+	border-radius: 5px;
+	padding: 5px;
+	box-sizing: border-box;
+	margin-top: 20px;
+}
+
+#contact-us-form textarea {
+	background-color: #f7f7f7;
+	color: rgb(100,100,100);
+	border-radius: 5px;
+	padding: 5px;
+	box-sizing: border-box;
+	margin-top: 20px;
+	width:300px; 
+	height:200px;
+}
+
+#contact-us-form #submit-button {
+	font-size: 15px;
+	background-color: rgb(100,100,100);
+	border: 1px solid #f7f7f7;
+	color: #f7f7f7;
+	margin: 20px 75px;
+	padding: 10px 0;
+	width: 150px;
+}
+
+#contact-us-form #submit-button:hover {
+	background-color: #f7f7f7;
+	color: rgb(100,100,100);
+}
+
+#general-info {
+	width: 300px;
+	height: 200px;
+	text-align: center;
+	color: #f7f7f7;
+	font-size: 20px;
+	position: relative;
+	border-bottom: 1px solid #f7f7f7;
+}
+
+#general-info .icon {
+	color: #f7f7f7; 
+	position: absolute; 
+	left: 0;
+}
+
+#contact-section-content iframe {
+	width: 680px;
+	margin: auto;
+}
+
+/* footer section */
+
+#mainPage-footer {
+	height: 200px;
+	width: 100%;
+	background-color: black;
+}
+
+#footer-inner {
+	height: 100%;
+	width: 680px;
+	margin: auto;
+	font-weight: lighter;
+	text-transform: uppercase;
+	font-size: 12px;
+	padding-top: 30px;
+	box-sizing: border-box;
+
+	display: flex;
+	align-items: flex-start;
+}
+
+#footer-figureOne {
+	margin: 0;
+	padding: 0;
+	height: 100px;
+	width: 250px;
+	margin-right: 100px;
+	text-align: center;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+#footer-figureTwo {
+	margin: 0;
+	padding: 0;
+	height: 170px;
+	width: 250px;
+}
+
+#footer-figureThree {
+	margin: 0;
+	padding: 0;
+	height: 170px;
+	width: 180px;
+}
+
+#footer-inner p {
+	padding: 0;
+	margin: 0;
+}
+
+#footer-inner ul {
+	list-style-type: none;
+	display: flex;
+	padding: 0;
+	margin: 0;
+	flex-direction: column;
+	justify-content: space-between;
+}
