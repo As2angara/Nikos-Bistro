@@ -32,6 +32,14 @@ body {
 	grid-row: 1 / span 1;
 }
 
+#logo-container img {
+	height: 80px;
+}
+
+#hamburger-icon {
+	display: none;
+}
+
 #list-container {
 	grid-column: 3 / span 2;
 	grid-row: 1 / span 1;
