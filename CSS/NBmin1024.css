@@ -6,12 +6,6 @@ html,body{
 	font-family: 'Fjalla One', sans-serif;
 }
 
-body {
-	background: url("../Images/baked-beer-cheese.jpg") no-repeat fixed;
-	background-position: center center;
-	background-size: cover;
-}
-
 
 /* Navigation Bar Section */
 #main-nav {
