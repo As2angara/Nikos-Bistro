@@ -216,6 +216,14 @@ body {
     align-items: center;
 }
 
+#food-header h1 {
+	font-size: 50px;
+}
+
+#food-header p {
+	font-size: 30px;
+}
+
 .food-carousel-container {
 	height: 500px;
 	width: 680px;
@@ -361,6 +369,18 @@ body {
 	margin: 0;
 	padding: 50px;
 	border-bottom: 1px solid #f7f7f7;
+}
+
+#contact-section-content h2 {
+	font-size: 30px; 
+	color: #f7f7f7; 
+	margin-bottom: 0;
+}
+
+#contact-section-content p {
+	font-size: 20px; 
+	color: #f7f7f7;
+	margin: 0;
 }
 
 #find-us {

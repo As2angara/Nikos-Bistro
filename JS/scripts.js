@@ -1,10 +1,10 @@
-/*function myScrollFunction() {
+function myScrollFunction() {
   scrollNavBar();
   scrollCallUsCont();
   scrollCarouselOne();
   scrollCarouselTwo();
   scrollCarouselThree();
-}*/
+}
 
 function scrollNavBar() {
   var navbar = document.getElementById("main-nav");
@@ -53,7 +53,7 @@ $(document).ready(function(){
     slidesToShow: 3,
     slidesToScroll: 3,
     prevArrow: $('.prev1'),
-    nextArrow: $('.next1')
+    nextArrow: $('.next1'),
   });
 });
 
@@ -65,7 +65,7 @@ $(document).ready(function(){
     slidesToShow: 3,
     slidesToScroll: 3,
     prevArrow: $('.prev2'),
-    nextArrow: $('.next2')
+    nextArrow: $('.next2'),
   });
 });
 
@@ -77,6 +77,36 @@ $(document).ready(function(){
     slidesToShow: 3,
     slidesToScroll: 3,
     prevArrow: $('.prev3'),
-    nextArrow: $('.next3')
+    nextArrow: $('.next3'),
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
