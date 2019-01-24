@@ -467,7 +467,7 @@ html,body{
 
 /* Main About section */
 #main-about-section {
-	height: 900px;
+	height: 1000px;
 	width: 100%;
 	background-color: #f7f7f7;
 }
@@ -489,7 +489,10 @@ html,body{
 
 #main-about-section-inner p{
 	margin: 0 10px;
+}
 
+#main-about-section-inner-text p:first-child{
+	display: none;
 }
 
 #main-about-section-inner-head{

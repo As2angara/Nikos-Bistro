@@ -513,3 +513,99 @@ html,body{
 	flex-direction: column;
 	justify-content: space-between;
 }
+
+/* ------------------------------------------- About Page ------------------------------------------*/
+
+
+/* Banner Section */
+#about-banner {
+	background: url("../Images/colors-drinking.jpg") no-repeat fixed;
+	background-position: left top;
+	background-size: cover;
+	height: 600px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#about-banner-header {
+	height: auto;
+	width: 450px;
+	background-color: rgb(0,0,0,0.7);
+	border-radius: 25px;
+	text-align: center;
+	font-family: 'Italiana';
+	font-size: 50px;
+	color: #f7f7f7;
+}
+
+#about-banner-header h1 {
+	margin: 50px 20px;
+	padding: 20px 0;
+	border-bottom: 1px solid #f7f7f7;
+	border-top: 1px solid #f7f7f7;
+}
+
+
+/* Main About section */
+#main-about-section {
+	height: 1200px;
+	width: 100%;
+	background-color: #f7f7f7;
+}
+
+#main-about-section-inner {
+	height: 100%;
+	width: 680px;
+	background-color: rgb(255,255,255);
+	margin: auto;
+	text-align: center;
+	padding: 10px;
+	color: grey;
+	box-sizing: border-box;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+#main-about-section-inner p{
+	margin: 0 40px;
+
+}
+
+#main-about-section-inner-head{
+	font-family: 'Italiana';
+	font-size: 30px;
+	color: rgb(0,0,0);
+	display: flex;
+}
+
+#main-about-section-inner-head img {
+	height: 150px;
+	width: 150px;
+}
+
+#main-about-section-inner-head h2 {
+	margin: 0;
+	padding: 20px 0;
+	height: 150px;
+	box-sizing: border-box;
+}
+
+#main-about-section-inner-pic {
+	width: 100%;
+	height: auto;
+}
+
+/* Google maps footer */
+
+#main-about-map {
+	height: 300px;
+	width: 100%;
+}
