@@ -551,6 +551,18 @@ html,body{
 	justify-content: space-between;
 }
 
+/* ------------------------------------------- About Page ------------------------------------------*/
+
+
+#about-banner {
+	background: url("../Images/colors-drinking.jpg") no-repeat fixed;
+	background-position: center center;
+	background-size: cover;
+	height: 300px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
 
 
 
