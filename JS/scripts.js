@@ -10,7 +10,7 @@ function scrollNavBar() {
   var navbar = document.getElementById("main-nav");
       
   if (window.pageYOffset >= 80) {
-    navbar.style.backgroundColor = "rgba(42, 34, 34, 0.7)";
+    navbar.style.backgroundColor = "rgba(0,0,0, 0.7)";
   } else if(window.pageYOffset == 0) {
     navbar.style.backgroundImage = "linear-gradient(to bottom, rgba(42, 34, 34, 1.0), rgba(42, 34, 34, 0))";
     navbar.style.backgroundColor = "transparent";

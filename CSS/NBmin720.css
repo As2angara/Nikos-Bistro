@@ -606,6 +606,42 @@ html,body{
 /* Google maps footer */
 
 #main-about-map {
-	height: 300px;
+	height: 500px;
 	width: 100%;
+}
+
+
+/* ------------------------------------------- Menu Page ------------------------------------------*/
+
+/* Banner Section */
+#menu-banner {
+	background: url("../Images/barbecue.jpg") no-repeat fixed;
+	background-position: left top;
+	background-size: cover;
+	height: 600px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#menu-banner-header {
+	height: auto;
+	width: 450px;
+	background-color: rgb(0,0,0,0.7);
+	border-radius: 25px;
+	text-align: center;
+	font-family: 'Italiana';
+	font-size: 50px;
+	color: #f7f7f7;
+}
+
+#menu-banner-header h1 {
+	margin: 50px 20px;
+	padding: 20px 0;
+	border-bottom: 1px solid #f7f7f7;
+	border-top: 1px solid #f7f7f7;
 }
