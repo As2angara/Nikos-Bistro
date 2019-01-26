@@ -1,10 +1,11 @@
-function myScrollFunction() {
+
+window.addEventListener("scroll", function(){
   scrollNavBar();
   scrollCallUsCont();
   scrollCarouselOne();
   scrollCarouselTwo();
   scrollCarouselThree();
-}
+});
 
 function scrollNavBar() {
   var navbar = document.getElementById("main-nav");

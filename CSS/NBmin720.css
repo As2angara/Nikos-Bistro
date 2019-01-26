@@ -52,6 +52,39 @@ html,body{
 	align-items: center;
 }
 
+.cool-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #f7f7f7;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #f7f7f7;
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.cool-link-on {
+	color: #f7f7f7;
+    text-decoration: none;
+}
+
+.cool-link-on::after {
+	content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #f7f7f7;
+}
+
 /* Landing page settings */
 #landing {
 	height: 100%;
