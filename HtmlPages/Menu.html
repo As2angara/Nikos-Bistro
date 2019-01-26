@@ -57,9 +57,9 @@
 		<!-- Main Menu Content-->
 		<div id = "main-menu-content">
 			<!-- Starters menu -->
-			<div id = "main-menu-content-starters">
+			<div id = "main-menu-content-starters" class = "food-card">
 				<h1>Starters</h1>
-				<div id = "main-menu-content-starters-food" class = "foods">
+				<div class = "foods">
 					<div style = "border-top: 1px solid grey;">
 						<p>Tomato Bruschetta</p>
 						<p style = "color: grey;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
@@ -86,12 +86,13 @@
 						<p>$5.00</p>
 					</div>
 				</div>
+				<img src = "../Images/appetizer-basil.jpg" alt = "appetizer food menu">
 			</div>
 
 			<!-- Mains menu -->
-			<div id = "main-menu-content-main">
+			<div id = "main-menu-content-main" class = "food-card">
 				<h1>Main</h1>
-				<div id = "main-menu-content-main-food" class = "foods">
+				<div class = "foods">
 					<div style = "border-top: 1px solid grey;">
 						<p>Penne Pasta</p>
 						<p style = "color: grey;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
@@ -148,13 +149,13 @@
 						<p>$12.00</p>
 					</div>
 				</div>
-				</div>
+				<img src = "../Images/main-cuisine.jpg" alt = "Entree food menu">
 			</div>
 
 			<!-- Sides menu -->
-			<div id = "main-menu-content-sides">
+			<div id = "main-menu-content-sides" class = "food-card">
 				<h1>Sides</h1>
-				<div id = "main-menu-content-sides-food" class = "foods">
+				<div class = "foods">
 					<div style = "border-top: 1px solid grey;">
 						<p>Garlic Bread</p>
 						<p style = "color: grey;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
@@ -191,12 +192,13 @@
 						<p>$5.00</p>
 					</div>
 				</div>
+				<img src = "../Images/Sides-salad.jpg" alt = "Sides food menu">
 			</div>
 
 			<!-- Desserts menu -->
-			<div id = "main-menu-content-desserts">
+			<div id = "main-menu-content-desserts" class = "food-card">
 				<h1>Desserts</h1>
-				<div id = "main-menu-content-desserts-food" class = "foods">
+				<div class = "foods">
 					<div style = "border-top: 1px solid grey;">
 						<p>Pineapple cake</p>
 						<p style = "color: grey;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
@@ -233,14 +235,46 @@
 						<p>$4.00</p>
 					</div>
 				</div>
-				</div>
+				<img src = "../Images/Desserts-gelato.jpg" alt = "Desserts food menu">
 			</div>
 		</div>
-
-		<!-- Nikos Bistro Information-->
-		<div id = "main-menu-info"></div>
 	</section>
 
-  
+	<!-- footer section -->
+	<footer id = "mainPage-footer" style = "font-family:'Roboto', sans-serif; color: rgb(200,200,200);">
+		<div id = "footer-inner">
+			<figure id = "footer-figureOne">
+				<img src = "../Images/section-symbol.png" alt = "sect-start-symbol" style = "height: 50px; width: auto;">
+				<figcaption>2019 Niko's Bistro | Pixel House Studios</figcaption>
+			</figure>
+			
+			<figure id = "footer-figureTwo">
+				<div>
+					<p>Follow us</p>
+					<div style = "margin: 10px 0 30px 0; ">
+						<i class="fab fa-facebook-square"></i>
+						<i class="fab fa-instagram"></i>
+						<i class="fab fa-twitter"></i>
+					</div>
+			    </div>
+				<div style = "height: 50px;">
+					<p>Hours of Operation:</p>
+					<ul style = "margin: 10px 0;">
+						<li>Mon - Thurs: 10am - 11pm</li>
+						<li>Fri - Sun: 10am - 12am</li>
+					</ul>
+				</div>
+			</figure>
+
+			<figure id = "footer-figureThree">
+				<ul style = " margin: 0; height: 100px;">
+					<li>Home</li>
+					<li>About</li>
+					<li>Menu</li>
+					<li>Contact</li>
+				</ul>
+			</figure>
+		</div>
+	</footer>
 </body>
 </html>

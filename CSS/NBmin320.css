@@ -375,7 +375,7 @@ html,body{
 
 #footer-inner {
 	height: 100%;
-	width: 100%;
+	width: 90%;
 	margin: auto;
 	font-weight: lighter;
 	text-transform: uppercase;
@@ -384,9 +384,9 @@ html,body{
 	box-sizing: border-box;
 
 	display: flex;
-	flex-direction: column-reverse;
-	align-items: center;
-	justify-content: space-between;
+	flex-direction: row-reverse;
+	align-items: flex-start;
+	justify-content: flex-end;
 
 }
 
@@ -407,22 +407,23 @@ html,body{
 #footer-figureOne {
 	margin: 0;
 	padding: 0;
-	height: 100px;
-	width: 90%;
+	height: 150px;
+	width: 205px;
 	display: flex;
-	justify-content: center;
-	align-items: flex-end;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 }
 
 #footer-figureOne img {
-	display: none;
+	margin-top: 30px;
 }
 
 #footer-figureTwo {
 	margin: 0;
 	padding: 0;
-	height: 170px;
-	width: 90%;
+	height: auto;
+	width: 150px;
 }
 
 #footer-figureThree {
@@ -561,12 +562,36 @@ html,body{
 }
 
 /*-- Menu content --*/
+#main-menu {
+	width: 100%;
+	background-color: #f7f7f7;
+	margin: 0;
+	padding: 0;
+}
+
+#main-menu-content {
+	width: 90%;
+	background-color: white;
+	padding: 20px;
+	box-sizing: border-box;
+	margin: auto;
+}
+
+.food-card h1 {
+	font-size: 35px;
+}
+
+.food-card img {
+	height: 300px;
+	width: 100%;
+}
+
 .foods div {
 	border-bottom: 1px solid grey;
-	border-collapse: collapse;
 	padding-left: 20px;
-	width: 90%;
+	width: 100%;
 	margin: auto;
+	box-sizing: border-box;
 }
 
 .foods div p {
