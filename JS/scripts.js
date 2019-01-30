@@ -1,6 +1,10 @@
+/* Body scrolling events */
 
 window.addEventListener("scroll", function(){
-  scrollNavBar();
+  if(window.innerWidth >= 720){
+    scrollNavBar();
+  }
+  
   scrollCallUsCont();
   scrollCarouselOne();
   scrollCarouselTwo();
@@ -46,6 +50,22 @@ function scrollCarouselThree() {
   }
 }
 
+/* 320px navigation bar setup */
+
+var hamburgerIcon = document.getElementById('hamburger-icon');
+var exitIcon = document.getElementById('exit-icon');
+var listContainer = document.getElementById('list-container');
+
+hamburgerIcon.addEventListener('click', function(){
+  displayItem();
+});
+
+function displayItem(){
+  listContainer.style.display = 'block';
+}
+
+/* Menu page carousel script */
+
 $(document).ready(function(){
   $('.food-slider1').slick({
     arrows: true,
@@ -81,6 +101,9 @@ $(document).ready(function(){
     nextArrow: $('.next3'),
   });
 });
+
+
+
 
 
 
