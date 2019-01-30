@@ -60,8 +60,20 @@ hamburgerIcon.addEventListener('click', function(){
   displayItem();
 });
 
+exitIcon.addEventListener('click', function(){
+  hideItem();
+});
+
 function displayItem(){
   listContainer.style.display = 'block';
+  exitIcon.style.display = 'block';
+  hamburgerIcon.style.display = 'none';
+}
+
+function hideItem(){
+  listContainer.style.display = 'none';
+  exitIcon.style.display = 'none';
+  hamburgerIcon.style.display = 'block';
 }
 
 /* Menu page carousel script */
