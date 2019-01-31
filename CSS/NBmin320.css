@@ -70,6 +70,10 @@ html,body{
 	transition: all 0.5s linear;
 }
 
+#list-container a {
+	cursor: pointer;
+}
+
 #list-container ul {
 	margin: 0;
 	padding: 0;
@@ -91,6 +95,7 @@ html,body{
 	margin-left: 5%;
 	color: white;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 .cool-link::after {

@@ -35,9 +35,17 @@ html,body{
 	display: none;
 }
 
+#exit-icon {
+	display: none;
+}
+
 #list-container {
 	grid-column: 3 / span 2;
 	grid-row: 1 / span 1;
+}
+
+#list-container a {
+	cursor: pointer;
 }
 
 #list-container ul {
@@ -56,6 +64,7 @@ html,body{
     display: inline-block;
     text-decoration: none;
     color: #f7f7f7;
+    cursor: pointer;
 }
 
 .cool-link::after {
@@ -75,6 +84,7 @@ html,body{
 .cool-link-on {
 	color: #f7f7f7;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .cool-link-on::after {
